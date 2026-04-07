@@ -25,9 +25,9 @@
     "type": "git",
     "url": "https://github.com/SEU_USUARIO/gdz-consultoria.git"
   },
-  "homepage": "https://www.gdzconsultoria.com.br/",
+  "homepage": "https://zukihy.github.io/GDZConsultoria-em-seguranca-e-infra/",
   "bugs": {
-    "url": "https://github.com/SEU_USUARIO/gdz-consultoria/issues"
+    "url": "https://github.com/ZUKIhy/GDZConsultoria-em-seguranca-e-infra/issues"
   },
   "engines": {
     "node": ">=14.0.0"

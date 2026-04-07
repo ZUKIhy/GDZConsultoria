@@ -61,7 +61,7 @@ MIT License - veja [LICENSE](LICENSE) para detalhes.
 
 ## 📞 Contato
 
-- **Site**: [www.gdzconsultoria.com.br](https://www.gdzconsultoria.com.br)
+- **Site**: [GitHub Pages](https://zukihy.github.io/GDZConsultoria-em-seguranca-e-infra/)
 - **Email**: contato@gdzconsultoria.com.br
 - **WhatsApp**: [+55 17 9136-2933](https://wa.me/5517991362933)
 
