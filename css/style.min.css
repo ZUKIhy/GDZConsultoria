@@ -647,6 +647,26 @@ h3::before {
   background-size: 118%;
 }
 
+.problem-card--rede {
+  background-position: center 42%;
+}
+
+.problem-card--visibilidade {
+  background-position: center 36%;
+}
+
+.problem-card--riscos {
+  background-position: center 40%;
+}
+
+.problem-card--cloud-governanca {
+  background-position: center 38%;
+}
+
+.problem-card--evolucao {
+  background-position: center 36%;
+}
+
 .problem-card--image::after {
   content: "";
   position: absolute;
@@ -1067,7 +1087,33 @@ iframe {
   }
 
   .problem-card--image {
-    min-height: 280px;
+    min-height: 300px;
+    background-size: cover;
+  }
+
+  .problem-card--rede {
+    background-position: center 46%;
+  }
+
+  .problem-card--visibilidade {
+    background-position: center 34%;
+  }
+
+  .problem-card--riscos {
+    background-position: center 36%;
+  }
+
+  .problem-card--backup {
+    background-position: center 44%;
+    background-size: cover;
+  }
+
+  .problem-card--cloud-governanca {
+    background-position: center 34%;
+  }
+
+  .problem-card--evolucao {
+    background-position: center 34%;
   }
 
   header.page-header {
