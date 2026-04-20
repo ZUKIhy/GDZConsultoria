@@ -485,12 +485,102 @@ h3::before {
   box-shadow: 0 30px 70px rgba(15, 23, 42, 0.15);
 }
 
+.feature-link:hover .feature--image {
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.22);
+}
+
 .feature {
   display: flex;
   flex-direction: column;
   gap: 12px;
   justify-content: flex-start;
   flex: 1;
+}
+
+.feature--image {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  padding: clamp(18px, 2.4vw, 26px);
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.16);
+  isolation: isolate;
+}
+
+.feature--consultoria-melhoria {
+  background-position: center 34%;
+  background-size: 112%;
+}
+
+.feature--image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent 34%),
+    linear-gradient(180deg, transparent 52%, rgba(15, 23, 42, 0.22));
+  opacity: 0.72;
+}
+
+.feature--image h3,
+.feature--image p {
+  position: relative;
+  z-index: 1;
+}
+
+.feature--image h3 {
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.42);
+  opacity: 1;
+  transform: none;
+  animation: none;
+  font-size: clamp(1.18rem, 1.6vw, 1.45rem);
+  line-height: 1.18;
+}
+
+.feature--image h3::before {
+  display: none;
+}
+
+.feature--image p {
+  color: #f8fafc !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.48);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 32ch;
+}
+
+.feature--image .icon-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: auto;
+  padding: 0;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.18);
+  font-size: 1.35rem;
+  line-height: 1;
 }
 
 .feature p {
@@ -815,6 +905,10 @@ iframe {
 }
 
 @media (max-width: 720px) {
+  .feature--consultoria-melhoria {
+    background-size: cover;
+  }
+
   header.page-header {
     padding: clamp(100px, 15vw, 140px) clamp(12px, 3vw, 18px) clamp(40px, 6vw, 60px);
     min-height: clamp(360px, 45vh, 480px);
@@ -1433,7 +1527,7 @@ button:disabled:hover {
 .footer-column {
   background: rgba(15, 23, 42, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 14px 16px;
 }
 
